@@ -1,0 +1,242 @@
+
+    /* Hero Section Background */
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                    url('../image/hero1.png'); 
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .navbar {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        color: #111 !important;
+    }
+
+    .btn-success {
+        background-color: #008169 !important; 
+        border: none;
+    }
+
+    .search-box {
+        position: absolute;
+        bottom: 122px; 
+        left: 38%;
+        transform: translateX(-50%);
+        max-width: 900px;
+    }
+
+    h1 {
+        line-height: 1.2;
+    }
+
+    @media (max-width: 768px) {
+        .search-box {
+            position: static;
+            transform: none;
+            margin-top: 50px;
+        }
+        .hero-section {
+            padding-bottom: 50px;
+        }
+    }
+
+
+
+    .custom-dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+  
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: 200px;
+        z-index: 1000;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+    .custom-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    
+    .dropdown-content li a {
+        display: block;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: #f8f9fa;
+        color: #008169;
+        border-radius: 5px;
+    }
+
+   
+
+
+
+ 
+    .benefits-section {
+        background-color: #ffffff;
+        margin-top: 150px
+    }
+
+    
+    .benefit-card {
+        padding: 40px 30px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        background-color: transparent;
+        height: 100%;
+    }
+
+  
+    .active-card, .benefit-card:hover {
+        background-color: #ffffff;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    }
+
+   
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        background-color: #e6f3f0; 
+        color: #008169; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 24px;
+    }
+
+    .benefit-card h5 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #222;
+    }
+
+    .benefit-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    
+
+
+ /* ******** */
+    /* স্লাইড ট্রানজিশন স্মুথ করার জন্য */
+    .carousel-item {
+        transition: transform 0.6s ease-in-out;
+    }
+
+    /* কার্ডের স্টাইল */
+    .card {
+        border: none;
+        border-radius: 15px;
+        margin: 10px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+
+    .card img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    /* নেক্সট এবং প্রিভিয়াস বাটনের পজিশন ঠিক করা */
+    .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+    }
+
+    .btn-success {
+        background-color: #008169 !important;
+        border: none;
+    }
+/* ********* */
+
+
+
+
+
+    .experience-section {
+        background-color: #f8fcfb; 
+        margin-top: 152px;
+        
+        /* হালকা ব্যাকগ্রাউন্ড */
+    }
+
+    /* স্ট্যাটাস কার্ড স্টাইল */
+    .stat-card {
+        transition: transform 0.3s ease;
+        border: none;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* সবুজ এক্টিভ কার্ড */
+    .active-stat {
+        background-color: #008169;
+    }
+
+    /* আইকন বক্স স্টাইল */
+    .icon-box-green {
+        width: 50px;
+        height: 50px;
+        background-color: #e6f3f0;
+        color: #008169;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+    .icon-box-light {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+    /* কার্ডের আঁকাবাঁকা পজিশন ঠিক করা */
+    @media (min-width: 768px) {
+        .mt-md-5 {
+            margin-top: 3rem !important;
+        }
+    }
+
+    /* চেকলিস্ট আইকন */
+    .fa-check {
+        font-size: 12px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
