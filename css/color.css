@@ -181,10 +181,10 @@
         background-color: #f8fcfb; 
         margin-top: 152px;
         
-        /* হালকা ব্যাকগ্রাউন্ড */
+      
     }
 
-    /* স্ট্যাটাস কার্ড স্টাইল */
+
     .stat-card {
         transition: transform 0.3s ease;
         border: none;
@@ -194,12 +194,12 @@
         transform: translateY(-10px);
     }
 
-    /* সবুজ এক্টিভ কার্ড */
+    
     .active-stat {
         background-color: #008169;
     }
 
-    /* আইকন বক্স স্টাইল */
+   
     .icon-box-green {
         width: 50px;
         height: 50px;
@@ -224,14 +224,9 @@
         font-size: 20px;
     }
 
-    /* কার্ডের আঁকাবাঁকা পজিশন ঠিক করা */
-    @media (min-width: 768px) {
-        .mt-md-5 {
-            margin-top: 3rem !important;
-        }
-    }
+   
 
-    /* চেকলিস্ট আইকন */
+
     .fa-check {
         font-size: 12px;
         width: 24px;
@@ -239,4 +234,358 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+
+
+
+ 
+
+    .stat-card {
+        background-color: white;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        outline: none; 
+        border: 1px solid transparent;
+    }
+
+    .stat-card .icon-box {
+        width: 50px;
+        height: 50px;
+        background-color: #e6f3f0;
+        color: #008169;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+
+    .stat-card:focus {
+        background-color: #008169 !important; 
+        color: white !important;
+        transform: translateY(-15px);
+        box-shadow: 0 20px 40px rgba(0, 129, 105, 0.3) !important;
+    }
+
+  
+    .stat-card:focus p, 
+    .stat-card:focus h3 {
+        color: white !important;
+    }
+
+   
+    .stat-card:focus .icon-box {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        color: white !important;
+    }
+
+
+
+
+
+
+
+/* /* !!!!!!!!!!!!!!!!!!!!! */
+
+   
+    .image-stack-container {
+        min-height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .img-wrapper-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 371px;
+        z-index: 1;
+    }
+
+
+.img-wrapper-2 {
+    position: absolute;
+    bottom: -77px;
+    right: 112px;
+    width: 336px;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+
+    .dots-pattern {
+        position: absolute;
+        top: 114px;
+        right: 222px;
+        width: 100px;
+        height: 120px;
+        background-image: radial-gradient(#d1d1d1 2px, transparent 2px);
+        background-size: 15px 15px;
+        z-index: 0;
+    }
+
+/* DRop */
+    .custom-dropdown-wrapper {
+        position: absolute;
+        bottom: 81px;
+        left: -207px;
+        width: 250px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        max-height: 40px;
+    }
+
+
+    .custom-dropdown-wrapper:hover {
+        max-height: 300px;
+        padding-bottom: 10px !important;
+    }
+
+    .dropdown-items {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        padding-top: 10px;
+    }
+
+    .custom-dropdown-wrapper:hover .dropdown-items {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .dropdown-items li a {
+        font-size: 12px;
+        transition: 0.2s;
+    }
+
+    .dropdown-items li a:hover {
+        color: #008169 !important;
+        padding-left: 5px;
+    }
+
+    .small-icon {
+        font-size: 10px;
+        transition: transform 0.3s ease;
+    }
+
+
+    .custom-dropdown-wrapper:hover .small-icon {
+        transform: rotate(180deg);
+    }
+
+
+    .x-small-text {
+        font-size: 10px;
+        color: #666;
+    }
+
+   /* Drop */
+
+    
+
+!!!!!!!!!!!!!!!!! */
+
+
+
+
+  
+
+    .w-60 { width: 60% !important; }
+    
+  
+    .position-relative img {
+        transition: transform 0.3s ease;
+    }
+
+    .position-relative img:hover {
+        transform: scale(1.05);
+        z-index: 5 !important;
+    }
+
+   
+    .accordion-item {
+        border: none;
+        margin-bottom: 10px;
+        background: #f8fcfb;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #e6f3f0;
+        color: #008169;
+    }
+
+
+
+
+    /* part2 */
+
+
+
+    .image-overlap-container {
+        position: relative;
+        min-height: 450px;
+    }
+
+
+    .img-palm-tree {
+    width: 301px;
+    top: 170px;
+    right: -184px;
+    z-index: 3;
+    transition: transform 0.3s ease;
+}
+
+   
+    .img-resort {
+        width: 377px;
+        bottom: 84px; 
+        left: 0;
+        z-index: 2;
+       
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    }
+
+
+    .img-resort:hover, .img-palm-tree:hover {
+        transform: scale(1.03);
+        z-index: 5;
+    }
+
+
+
+
+    /* part2 */
+
+
+
+
+
+
+    /* --- Accordion Styles --- */
+    .custom-acc-btn {
+        box-shadow: none !important;
+        border-radius: 12px !important;
+        font-size: 15px;
+    }
+
+    .active-green {
+        background-color: #eaf6f3 !important; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+    }
+
+    .custom-accordion .accordion-button:after {
+        background-size: 12px;
+        width: 12px;
+    }
+
+    /* --- Image & Chat Container --- */
+    .guarantee-image-box {
+        min-height: 480px;
+    }
+
+    .main-img-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:371px;
+        z-index: 1;
+    }
+
+    .sub-img-wrapper {
+        position: absolute;
+        bottom: -51px;
+        right: 55px;
+        width: 350px;
+        z-index: 2;
+      
+        border-radius: 25px;
+    }
+
+    /* --- Chat Bubbles --- */
+    .chat-container {
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-bubble {
+        background: white;
+        padding: 8px 15px;
+        border-radius: 12px;
+        font-size: 12px;
+        width: fit-content;
+        animation: slideIn 0.5s ease-out;
+    }
+
+    .chat-bubble.highlight {
+        font-weight: bold;
+    }
+
+    /* --- Dot Grid Background --- */
+    .dots-pattern-bg {
+        position: absolute;
+        top: 22%;
+        right: 217px;
+        width: 100px;
+        height: 120px;
+        background-image: radial-gradient(#d1d1d1 2px, transparent 2px);
+        background-size: 15px 15px;
+        z-index: 0;
+    }
+
+
+
+
+
+
+
+    .benefit-section {
+        background-color: #ffffff;
+    }
+
+    .benefit-card {
+        background: white;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+    /* প্রথম কার্ডটির জন্য স্পেশাল শ্যাডো (ছবির মতো) */
+    .benefit-card.shadow-sm {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border-color: #e6f3f0;
+    }
+
+    /* আইকন বক্সের স্টাইল */
+    .icon-bg {
+        width: 50px;
+        height: 50px;
+        background-color: #e6f3f0; /* হালকা সবুজ ব্যাকগ্রাউন্ড */
+        color: #008169; /* মেইন সবুজ রঙ */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+    .benefit-card h5 {
+        font-size: 1.1rem;
+        margin-top: 15px;
+        color: #333;
     }
