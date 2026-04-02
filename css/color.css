@@ -766,3 +766,48 @@
       height: 180px;
       object-fit: cover;
     }
+
+
+    .testimonial-section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+/* Image Container */
+.testimonial-images {
+    min-height: 400px;
+}
+
+/* Base Avatar Styling */
+.avatar {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Positioning each avatar individually based on your image */
+.avatar-1 { width: 100px; height: 100px; top: 0%; left: 60%; } /* Top center */
+.avatar-2 { width: 80px; height: 80px; top: 40%; left: 40%; }  /* Center small */
+.avatar-3 { width: 120px; height: 120px; top: 45%; left: 0%; } /* Middle left */
+.avatar-4 { width: 110px; height: 110px; top: 80%; left: 35%; } /* Bottom left-ish */
+.avatar-5 { width: 90px; height: 90px; top: 75%; left: 75%; }  /* Bottom right-ish */
+
+/* Text Content Styling */
+.quote-icon i {
+    color: #007f5f; /* Your brand teal */
+}
+
+.dots .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.dots .dot.active {
+    background-color: #007f5f;
+}
+
