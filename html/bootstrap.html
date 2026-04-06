@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Personal Portfolio Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Devil Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-lg-block">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= OFFCANVAS ================= -->
+    <div class="offcanvas offcanvas-end" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5>Menu</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a href="#home" class="text-decoration-none">Home</a></li>
+                <li><a href="#about" class="text-decoration-none">About</a></li>
+                <li><a href="#service" class="text-decoration-none">Service</a></li>
+                <li><a href="#portfolio" class="text-decoration-none">Portfolio</a></li>
+                <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ================= ALERT ================= -->
+    <div class="container mt-3">
+        <div class="alert alert-success text-center">
+            Welcome to my Personal Portfolio Website
+        </div>
+    </div>
+
+    <!-- ================= HOME / CAROUSEL ================= -->
+    <section id="home" class="container py-4">
+        <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active text-center bg-light py-5 rounded">
+                    <h1>Hello, I am Devil</h1>
+                    <p>Frontend Web Developer</p>
+                </div>
+
+                <div class="carousel-item text-center bg-secondary text-white py-5 rounded">
+                    <h1>Responsive Bootstrap Website</h1>
+                    <p>Modern UI Design</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">About Me</h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" class="img-fluid rounded" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h3>Who Am I?</h3>
+                <p>
+                    I am a passionate web developer with experience in
+                    HTML5, Bootstrap 5 and JavaScript.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICE ================= -->
+    <section id="service" class="container py-5">
+        <h2 class="text-center mb-4">My Services</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-code fa-2x mb-3"></i>
+                        <h5>Web Design</h5>
+                        <p>Clean modern UI design.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-laptop-code fa-2x mb-3"></i>
+                        <h5>Frontend Development</h5>
+                        <p>Bootstrap responsive websites.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-mobile-screen fa-2x mb-3"></i>
+                        <h5>Responsive Design</h5>
+                        <p>Mobile and desktop support.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section id="portfolio" class="container py-5">
+        <h1 class="text-center fw-bold mb-5">My Projects</h1>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <img src="../image/artificial-intelligence-trends 1111.jpg" class="card-img-top" alt="AI Engine"
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h3 class="card-title mb-3">AI Engine</h3>
+
+                        <p class="text-muted small mb-3">
+                            Finished <u>13.09.2021</u> for Techify
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate.
+                        </p>
+
+                        <a href="#" class="btn btn-light rounded-pill px-4 py-2 mt-3">
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <img src="../image/Balanced Design 2222.jpeg" class="card-img-top" alt="Balanced Design"
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h3 class="card-title mb-3">Balanced Design</h3>
+
+                        <p class="text-muted small mb-3">
+                            Finished <u>12.01.2022</u> for Rubicon
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam orci.
+                        </p>
+
+                        <a href="#" class="btn btn-light rounded-pill px-4 py-2 mt-3">
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <img src="../image/the-rise-of-the-metaverse 3333.png" class="card-img-top" alt="Metaverse"
+                        style="height: 220px; object-fit: cover;">
+                    <div class="card-body text-center p-4">
+                        <h3 class="card-title mb-3">Metaverse 2.0</h3>
+
+                        <p class="text-muted small mb-3">
+                            Finished <u>10.11.2022</u> for Venom Tech
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu.
+                        </p>
+
+                        <a href="#" class="btn btn-light rounded-pill px-4 py-2 mt-3">
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav aria-label="Page navigation  example">
+  <ul class="pagination flex  justify-content-center mt-4">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </section>
+
+
+
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+
+        <form>
+            <input class="form-control mb-3" type="text" placeholder="Name">
+            <input class="form-control mb-3" type="email" placeholder="Email">
+            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+            <button class="btn btn-success">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ================= MODAL ================= -->
+    <div class="modal fade" id="serviceModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Service Details</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Modern responsive web design service using Bootstrap 5.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Brand Name</h5>
+                    <p>Creating modern web experiences with clean code and efficient design systems. Building the
+                        future, one pixel at a time.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Products</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Web Design</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Development</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Hosting</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Resources</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Your Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Affiliates</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Help Center</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Copyright:
+                        <a href="#" class="text-primary text-decoration-none">
+                            <strong>YourSite.com</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
