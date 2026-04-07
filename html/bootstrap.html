@@ -45,11 +45,11 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-unstyled">
-                <li><a href="#home" class="text-decoration-none">Home</a></li>
-                <li><a href="#about" class="text-decoration-none">About</a></li>
-                <li><a href="#service" class="text-decoration-none">Service</a></li>
-                <li><a href="#portfolio" class="text-decoration-none">Portfolio</a></li>
-                <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+                <li><a href="#home" class="text-decoration-none" data-bs-dismiss="offcanvas">Home</a></li>
+                <li><a href="#about" class="text-decoration-none" data-bs-dismiss="offcanvas">About</a></li>
+                <li><a href="#service" class="text-decoration-none" data-bs-dismiss="offcanvas">Service</a></li>
+                <li><a href="#portfolio" class="text-decoration-none" data-bs-dismiss="offcanvas">Portfolio</a></li>
+                <li><a href="#contact" class="text-decoration-none" data-bs-dismiss="offcanvas">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 <!-- ================= HOME / CAROUSEL ================= -->
-<section id="home" class="container py-4">
+<section id="home" class="container py-4 page-section">
     <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
 
         <!-- Indicators -->
@@ -130,7 +130,7 @@
 
 
     <!-- ================= ABOUT ================= -->
-    <section id="about" class="container py-5">
+    <section id="about" class="container py-5 page-section">
         <h2 class="text-center mb-4">About Me</h2>
 
         <div class="row align-items-center">
@@ -149,7 +149,7 @@
     </section>
 
     <!-- ================= SERVICE ================= -->
-    <section id="service" class="container py-5">
+    <section id="service" class="container py-5 page-section">
         <h2 class="text-center mb-4">My Services</h2>
 
         <div class="row g-4">
@@ -207,7 +207,7 @@
 
 
     <!-- ================= PORTFOLIO ================= -->
-    <section id="portfolio" class="container py-5">
+    <section id="portfolio" class="container py-5 page-section">
         <h1 class="text-center fw-bold mb-5">My Projects</h1>
 
         <div class="row g-4">
@@ -375,7 +375,7 @@
 
 
     <!-- ================= CONTACT ================= -->
-    <section id="contact" class="container py-5">
+    <section id="contact" class="container py-5 page-section">
         <h2 class="text-center mb-4">Contact Me</h2>
 
         <form>
@@ -500,7 +500,7 @@
             }
 
             showPage(currentPage);
-
+ 
             pageLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
